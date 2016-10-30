@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Utility"/>
+	<classpathentry kind="lib" path="C:/Users/Brend_000/Documents/GitHub/polyglot_group/Scala/lib/scalatest_2.11-3.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Brend_000/Documents/GitHub/polyglot_group/Scala/lib/scalactic_2.11-3.0.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,1 @@
+perl -I ..\lib ..\t\ColGroup.t > ..\Out\ColGroup.out 2> ..\Out\ColGroup.err

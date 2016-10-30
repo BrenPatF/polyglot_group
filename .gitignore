@@ -1,0 +1,9 @@
+Eclipse/*
+*.jar
+*.err
+*.out
+*.class
+.cache*
+*.log
+*.LST
+*.csv

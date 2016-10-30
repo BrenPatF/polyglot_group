@@ -1,0 +1,1 @@
+sqlplus -s app/app@xe < ..\sql\Install_app.sql
