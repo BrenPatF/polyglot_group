@@ -1,0 +1,19 @@
+SET SERVEROUTPUT ON FORMAT WRAPPED
+SET TRIMSPOOL ON
+SET PAGES 1000
+SET LINES 500
+WHENEVER SQLERROR EXIT FAILURE;
+SPOOL ..\out\R_Suite_br
+DECLARE
+BEGIN
+
+  Utils.Clear_Log;
+  TT_Utils.Run_Suite (TT_Utils.c_tt_suite_bren);
+
+EXCEPTION
+  WHEN OTHERS THEN
+    Utils.Write_Other_Error;
+END;
+/
+@..\..\lib\sql\L_Log_Default
+SPOOL OFF

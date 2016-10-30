@@ -1,0 +1,69 @@
+Loaded suite ../test/tc_colgroup
+Started
+
+../../Input/ut_group.csv
+========================
+.
+../../Input/ut_group.csv
+========================
+F
+===============================================================================
+Failure:
+test_asis_1(TestColGroup)
+../test/tc_colgroup.rb:37:in `do_test_asis'
+../test/tc_colgroup.rb:56:in `test_asis_1'
+     53:   end
+     54: 
+     55:   def test_asis_0; do_test_asis(0) end
+  => 56:   def test_asis_1; do_test_asis(1) end
+     57:   def test_bykey_0; do_test_by_key(0) end
+     58:   def test_bykey_1; do_test_by_key(1) end
+     59:   def test_byvalue_0; do_test_by_value(0) end
+Count rows
+<2> expected but was
+<1>
+
+diff:
+? 2
+? 1
+===============================================================================
+
+../../Input/ut_group.csv
+========================
+F
+===============================================================================
+Failure:
+test_bykey_0(TestColGroup)
+../test/tc_colgroup.rb:44:in `do_test_by_key'
+../test/tc_colgroup.rb:57:in `test_bykey_0'
+     54: 
+     55:   def test_asis_0; do_test_asis(0) end
+     56:   def test_asis_1; do_test_asis(1) end
+  => 57:   def test_bykey_0; do_test_by_key(0) end
+     58:   def test_bykey_1; do_test_by_key(1) end
+     59:   def test_byvalue_0; do_test_by_value(0) end
+     60:   def test_byvalue_1; do_test_by_value(1) end
+Compare tuple-lists for key-sorting
+<[["A", 2], ["Bx", 1], ["Cc", 1]]> expected but was
+<[["A", 2], ["B", 1], ["Cc", 1]]>
+
+diff:
+? [["A", 2], ["Bx", 1], ["Cc", 1]]
+===============================================================================
+
+../../Input/ut_group.csv
+========================
+.
+../../Input/ut_group.csv
+========================
+.
+../../Input/ut_group.csv
+========================
+.
+
+Finished in 0.053855 seconds.
+
+6 tests, 6 assertions, 2 failures, 0 errors, 0 pendings, 0 omissions, 0 notifications
+66.6667% passed
+
+111.41 tests/s, 111.41 assertions/s

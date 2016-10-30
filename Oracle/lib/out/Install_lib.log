@@ -1,0 +1,138 @@
+Common types creation
+=====================
+Drop type L3_chr_arr
+
+Type dropped.
+
+Drop type L2_chr_arr
+
+Type dropped.
+
+Create type L1_chr_arr
+
+Type created.
+
+Create type L2_chr_arr
+
+Type created.
+
+Create type L3_chr_arr
+
+Type created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+Create type L1_num_arr
+
+Type created.
+
+
+Grant succeeded.
+
+Common tables creation
+======================
+Create table log_headers
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+Insert the default log header
+
+1 row created.
+
+
+Grant succeeded.
+
+
+Sequence dropped.
+
+
+Sequence created.
+
+
+Grant succeeded.
+
+Create table log_lines
+
+Table created.
+
+
+Grant succeeded.
+
+
+Sequence dropped.
+
+
+Sequence created.
+
+
+Grant succeeded.
+
+Packages creation
+=================
+Create package Utils
+
+Package created.
+
+No errors.
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+Package body created.
+
+No errors.
+
+Grant succeeded.
+
+Create package Timer_Set
+
+Package created.
+
+No errors.
+
+Grant succeeded.
+
+
+Synonym created.
+
+
+Package body created.
+
+No errors.
+
+Grant succeeded.
+
+Create package Utils_TT
+
+Package created.
+
+No errors.
+
+Synonym created.
+
+
+Grant succeeded.
+
+
+Package body created.
+
+No errors.
+
+Grant succeeded.
+

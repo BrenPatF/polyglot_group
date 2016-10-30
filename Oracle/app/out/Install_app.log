@@ -1,0 +1,96 @@
+Synomym creation TO lib objects
+===============================
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+
+Synonym created.
+
+EXTERNAL table creation
+=======================
+Create lines_et
+
+Table dropped.
+
+
+Table created.
+
+Types creation
+==============
+CREATE OR REPLACE TYPE chr_int_rec AS
+*
+ERROR at line 1:
+ORA-02303: cannot drop or replace a type with type or table dependents
+
+
+
+Type created.
+
+Packages creation
+=================
+Create package Col_Group
+
+Package created.
+
+No errors.
+
+Package body created.
+
+No errors.
+
+Grant succeeded.
+
+Create package TT_Col_Group
+
+Package created.
+
+No errors.
+
+Package body created.
+
+No errors.
+
+Grant succeeded.
+
+Create package UT_Col_Group
+
+Package created.
+
+No errors.
+
+Package body created.
+
+No errors.
+
+Grant succeeded.
+
+
+PL/SQL procedure successfully completed.
+

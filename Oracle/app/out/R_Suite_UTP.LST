@@ -1,0 +1,50 @@
+.
+>  FFFFFFF   AA     III  L      U     U RRRRR   EEEEEEE
+>  F        A  A     I   L      U     U R    R  E
+>  F       A    A    I   L      U     U R     R E
+>  F      A      A   I   L      U     U R     R E
+>  FFFF   A      A   I   L      U     U RRRRRR  EEEE
+>  F      AAAAAAAA   I   L      U     U R   R   E
+>  F      A      A   I   L      U     U R    R  E
+>  F      A      A   I   L       U   U  R     R E
+>  F      A      A  III  LLLLLLL  UUU   R     R EEEEEEE
+.
+ FAILURE: ".COL_GROUP"
+.
+> Individual Test Case Results:
+>
+SUCCESS - COL_GROUP.UT_AIP_LIST_ASIS: EQ "Tie-break/single-delimiter/interior column: List count" Expected "3" and got "3"
+>
+FAILURE - COL_GROUP.UT_AIP_LIST_ASIS: EQ "Two copies/double-delimiter/first column: List count" Expected "2" and got "1"
+>
+SUCCESS - COL_GROUP.UT_AIP_SORT_BY_KEY: EQ "Tie-break/single-delimiter/interior column: List count" Expected "3" and got "3"
+>
+SUCCESS - COL_GROUP.UT_AIP_SORT_BY_KEY: EQ "...Record" Expected "A|2" and got "A|2"
+>
+FAILURE - COL_GROUP.UT_AIP_SORT_BY_KEY: EQ "...Record" Expected "Bx|1" and got "B|1"
+>
+SUCCESS - COL_GROUP.UT_AIP_SORT_BY_KEY: EQ "...Record" Expected "Cc|1" and got "Cc|1"
+>
+SUCCESS - COL_GROUP.UT_AIP_SORT_BY_KEY: EQ "Two copies/double-delimiter/first column: List count" Expected "1" and got "1"
+>
+SUCCESS - COL_GROUP.UT_AIP_SORT_BY_KEY: EQ "...Record" Expected "X|2" and got "X|2"
+>
+SUCCESS - COL_GROUP.UT_AIP_SORT_BY_VALUE: EQ "Tie-break/single-delimiter/interior column: List count" Expected "3" and got "3"
+>
+SUCCESS - COL_GROUP.UT_AIP_SORT_BY_VALUE: EQ "...Record" Expected "B|1" and got "B|1"
+>
+SUCCESS - COL_GROUP.UT_AIP_SORT_BY_VALUE: EQ "...Record" Expected "Cc|1" and got "Cc|1"
+>
+SUCCESS - COL_GROUP.UT_AIP_SORT_BY_VALUE: EQ "...Record" Expected "A|2" and got "A|2"
+>
+SUCCESS - COL_GROUP.UT_AIP_SORT_BY_VALUE: EQ "Two copies/double-delimiter/first column: List count" Expected "1" and got "1"
+>
+SUCCESS - COL_GROUP.UT_AIP_SORT_BY_VALUE: EQ "...Record" Expected "X|2" and got "X|2"
+>
+>
+> Errors recorded in utPLSQL Error Log:
+>
+> NONE FOUND
+
+PL/SQL procedure successfully completed.
+

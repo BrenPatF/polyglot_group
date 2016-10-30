@@ -1,0 +1,13 @@
+Test number 0
+Setup
+Opening file ../../Input/ut_group.csv
+ok 1 - listAsIs
+not ok 2 - sortByKey
+ok 3 - sortByValue
+Test number 1
+Setup
+Opening file ../../Input/ut_group.csv
+not ok 4 - listAsIs
+ok 5 - sortByKey
+ok 6 - sortByValue
+1..6

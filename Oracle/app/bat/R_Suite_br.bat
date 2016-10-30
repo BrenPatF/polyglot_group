@@ -1,0 +1,1 @@
+sqlplus -s app/app@xe < ..\sql\R_Suite_br.sql
