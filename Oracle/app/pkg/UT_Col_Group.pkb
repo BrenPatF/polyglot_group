@@ -1,12 +1,12 @@
 CREATE OR REPLACE PACKAGE BODY UT_Col_Group AS
 /***************************************************************************************************
 
-Description: utPLSQL unit testing package for Col_Group
-
+Description: utPLSQL unit testing for polyglot group-counting module, Col_Group
+                                                                               
 Modification History
 Who                  When        Which What
 -------------------- ----------- ----- -------------------------------------------------------------
-Brendan Furey        20-Oct-2016 1.0   Created.
+Brendan Furey        30-Oct-2016 1.0   Created
 
 ***************************************************************************************************/
 

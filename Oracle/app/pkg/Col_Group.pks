@@ -1,11 +1,12 @@
 CREATE OR REPLACE PACKAGE Col_Group AS
 /***************************************************************************************************
-Description: HR demo batch code. Procedure saves new employees from file via external table
+
+Description: polyglot group-counting module
                                                                                
 Modification History
 Who                  When        Which What
 -------------------- ----------- ----- -------------------------------------------------------------
-Brendan Furey        05-Oct-2016 1.0   Created
+Brendan Furey        30-Oct-2016 1.0   Created
 
 ***************************************************************************************************/
 
