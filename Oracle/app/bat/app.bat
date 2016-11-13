@@ -1,1 +1,1 @@
-sqlplus app/app@xe
+sqlplus app/app@pdborcl

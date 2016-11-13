@@ -1,10 +1,7 @@
 old   1: CREATE USER &DEMO_USER IDENTIFIED BY &DEMO_USER
 new   1: CREATE USER lib IDENTIFIED BY lib
-CREATE USER lib IDENTIFIED BY lib
-            *
-ERROR at line 1:
-ORA-01920: user name 'LIB' conflicts with another user or role name
 
+User created.
 
 old   1: GRANT CREATE SESSION TO &DEMO_USER
 new   1: GRANT CREATE SESSION TO lib
@@ -58,11 +55,8 @@ Grant succeeded.
 
 old   1: CREATE USER &DEMO_USER IDENTIFIED BY &DEMO_USER
 new   1: CREATE USER app IDENTIFIED BY app
-CREATE USER app IDENTIFIED BY app
-            *
-ERROR at line 1:
-ORA-01920: user name 'APP' conflicts with another user or role name
 
+User created.
 
 old   1: GRANT CREATE SESSION TO &DEMO_USER
 new   1: GRANT CREATE SESSION TO app

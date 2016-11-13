@@ -1,1 +1,0 @@
-sqlplus lib/lib@xe

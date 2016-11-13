@@ -1,1 +1,1 @@
-sqlplus sys/sys@xe AS SYSDBA
+sqlplus sys/sys@pdborcl AS SYSDBA

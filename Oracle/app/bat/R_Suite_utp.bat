@@ -1,1 +1,1 @@
-sqlplus -s app/app@xe < ..\sql\R_Suite_utp.sql
+sqlplus -s app/app@pdborcl < ..\sql\R_Suite_utp.sql

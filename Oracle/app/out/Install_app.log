@@ -36,19 +36,19 @@ Synonym created.
 EXTERNAL table creation
 =======================
 Create lines_et
+DROP TABLE lines_et
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist
 
-Table dropped.
 
 
 Table created.
 
 Types creation
 ==============
-CREATE OR REPLACE TYPE chr_int_rec AS
-*
-ERROR at line 1:
-ORA-02303: cannot drop or replace a type with type or table dependents
 
+Type created.
 
 
 Type created.

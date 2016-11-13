@@ -1,1 +1,1 @@
-sqlplus -s sys/sys@xe AS SYSDBA < ..\sql\Install_SYS.sql
+sqlplus -s sys/sys@pdborcl AS SYSDBA < ..\sql\Install_SYS.sql

@@ -33,6 +33,7 @@ Brendan Furey        19-Aug-2016 1.6   Package begin section: Added nls date for
 Brendan Furey        08-Sep-2016 1.7   Set_Result_Row: Increased max length to 32767 for variable
 Brendan Furey        09-Sep-2016 1.8   Cursor_to_Array added
 Brendan Furey        22-Oct-2016 1.9   TRAPIT name changes, UT->TT etc.
+Brendan Furey        13-Nov-2016 1.10  TT_Col_Group
 
 ***************************************************************************************************/
 c_status_f              CONSTANT VARCHAR2(10) := 'F';
@@ -42,10 +43,9 @@ c_status_word_s         CONSTANT VARCHAR2(10) := 'SUCCESS';
 c_null                  CONSTANT VARCHAR2(30) := 'NULL';
 c_time_not_ok           CONSTANT VARCHAR2(60) := 'Average call time: #1, exceeds limit: #2';
 c_tt_suites_3lis        CONSTANT L3_chr_arr := L3_chr_arr (
-                                    L2_chr_arr (L1_chr_arr ('TT_Emp_WS',           'tt_AIP_Save_Emps', 'tt_AIP_Get_Dept_Emps'),
-                                                L1_chr_arr ('TT_View_Drivers',     'tt_HR_Test_View_V'),
-                                                L1_chr_arr ('TT_Emp_Batch',        'tt_AIP_Load_Emps'))
+                                    L2_chr_arr (L1_chr_arr ('app.TT_Col_Group',         'tt_AIP_List_Asis', 'tt_AIP_Sort_By_Key', 'tt_AIP_Sort_By_Value'))
                                  );
+
 c_tt_suite_names_lis    CONSTANT L1_chr_arr := L1_chr_arr ('BRENDAN');
 
 TYPE test_set_rec  IS RECORD (

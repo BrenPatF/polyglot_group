@@ -1,1 +1,1 @@
-sqlplus -s lib/lib@xe < ..\sql\Install_lib.sql
+sqlplus -s lib/lib@pdborcl < ..\sql\Install_lib.sql

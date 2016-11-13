@@ -1,7 +1,7 @@
 CREATE OR REPLACE PACKAGE BODY TT_Col_Group AS
 /***************************************************************************************************
 
-Description: TRAPIT  (TRansactional API Testing) for polyglot group-counting module, Col_Group
+Description: TRAPIT (TRansactional API Testing) package for Col_Group
 
 Further details: 'TRAPIT - TRansactional API Testing in Oracle'
                  http://aprogrammerwrites.eu/?p=1723
@@ -9,7 +9,8 @@ Further details: 'TRAPIT - TRansactional API Testing in Oracle'
 Modification History
 Who                  When        Which What
 -------------------- ----------- ----- -------------------------------------------------------------
-Brendan Furey        30-Oct-2016 1.0   Created
+Brendan Furey        22-Oct-2016 1.0   Created
+Brendan Furey        13-Nov-2016 1.1   Utils_TT -> Utils_TT
 
 ***************************************************************************************************/
 
@@ -88,7 +89,7 @@ PROCEDURE Do_Test (p_proc_name VARCHAR2, p_exp_2lis L2_chr_arr, p_out_group_lis 
                    WHEN c_proc_name_key         THEN Col_Group.AIP_Sort_By_Key
                    WHEN c_proc_name_value       THEN Col_Group.AIP_Sort_By_Value
                  END;
-    Timer_Set.Increment_Time (l_timer_set, TT_Utils.c_call_timer);
+    Timer_Set.Increment_Time (l_timer_set, Utils_TT.c_call_timer);
 
     l_act_lis.EXTEND (l_arr_lis.COUNT);
     FOR i IN 1..l_arr_lis.COUNT LOOP
@@ -105,7 +106,7 @@ PROCEDURE Do_Test (p_proc_name VARCHAR2, p_exp_2lis L2_chr_arr, p_out_group_lis 
 
 BEGIN
 
-  l_timer_set := TT_Utils.Init (p_proc_name);
+  l_timer_set := Utils_TT.Init (p_proc_name);
   l_act_2lis.EXTEND (c_file_2lis.COUNT);
   l_inp_3lis.EXTEND (c_file_2lis.COUNT);
 
@@ -122,7 +123,7 @@ BEGIN
 
   END LOOP;
 
-  TT_Utils.Check_TT_Results (p_proc_name, c_scenario_lis, l_inp_3lis, l_act_2lis, p_exp_2lis, l_timer_set, c_ms_limit,
+  Utils_TT.Check_TT_Results (p_proc_name, c_scenario_lis, l_inp_3lis, l_act_2lis, p_exp_2lis, l_timer_set, c_ms_limit,
                              c_inp_group_lis, c_inp_field_2lis, p_out_group_lis, p_out_fields_2lis);
 
 END Do_Test;

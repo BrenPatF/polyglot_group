@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="2" hostname="HP-Brendan" id="0" name="TestColGroup" package="colgroup" skipped="0" tests="6" time="0.113" timestamp="2016-11-13T11:13:42">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="env.USERDOMAIN_ROAMINGPROFILE" value="HP-BRENDAN" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="eclipse.pdebuild.templates" value="/C:/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/templates/" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="env.PROMPT" value="$P$G" />
+
+          <property name="os.name" value="Windows 10" />
+
+          <property name="env.PYTHONPATH" value="..\lib" />
+
+          <property name="env.FP_NO_HOST_CHECK" value="NO" />
+
+          <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_111\lib\resources.jar;C:\Program Files\Java\jre1.8.0_111\lib\rt.jar;C:\Program Files\Java\jre1.8.0_111\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_111\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_111\lib\jce.jar;C:\Program Files\Java\jre1.8.0_111\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_111\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_111\classes" />
+
+          <property name="env.COMPUTERNAME" value="HP-BRENDAN" />
+
+          <property name="env.CommonProgramW6432" value="C:\Program Files\Common Files" />
+
+          <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
+
+          <property name="sun.desktop" value="windows" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="C:\eclipse\plugins\org.apache.ant_1.9.2.v201404171502" />
+
+          <property name="java.runtime.version" value="1.8.0_111-b14" />
+
+          <property name="env.HOMEPATH" value="\Users\Brend_000" />
+
+          <property name="user.name" value="Brend_000" />
+
+          <property name="user.language" value="en" />
+
+          <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_111\bin" />
+
+          <property name="ant.project.default-target" value="build" />
+
+          <property name="ant.project.name" value="Group" />
+
+          <property name="java.version" value="1.8.0_111" />
+
+          <property name="env.PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 60 Stepping 3, GenuineIntel" />
+
+          <property name="env.OnlineServices" value="Online Services" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="env.asl.log" value="Destination=file" />
+
+          <property name="env.TEMP" value="C:\Users\BREND_~1\AppData\Local\Temp" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_111\lib\endorsed" />
+
+          <property name="sun.cpu.isalist" value="amd64" />
+
+          <property name="env.HOMEDRIVE" value="C:" />
+
+          <property name="sun.jnu.encoding" value="Cp1252" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="ECLIPSE_HOME" value="../../../../../../../eclipse/" />
+
+          <property name="file.separator" value="\" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="user.country" value="IE" />
+
+          <property name="java.home" value="C:\Program Files\Java\jre1.8.0_111" />
+
+          <property name="env.PSModulePath" value="C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\" />
+
+          <property name="env.APPDATA" value="C:\Users\Brend_000\AppData\Roaming" />
+
+          <property name="env.PUBLIC" value="C:\Users\Public" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="env.ComSpec" value="C:\WINDOWS\system32\cmd.exe" />
+
+          <property name="env.OS" value="Windows_NT" />
+
+          <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+
+          <property name="ant.file" value="C:\Users\Brend_000\Documents\GitHub\polyglot_group\Java\Group\build.xml" />
+
+          <property name="os.version" value="10.0" />
+
+          <property name="env.ProgramW6432" value="C:\Program Files" />
+
+          <property name="path.separator" value=";" />
+
+          <property name="java.vm.version" value="25.111-b14" />
+
+          <property name="user.variant" value="" />
+
+          <property name="env.USERPROFILE" value="C:\Users\Brend_000" />
+
+          <property name="ant.library.dir" value="C:\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib" />
+
+          <property name="junit.output.dir" value="junit" />
+
+          <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+
+          <property name="env.TMP" value="C:\Users\BREND_~1\AppData\Local\Temp" />
+
+          <property name="Utility.location" value="../Utility" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="ant.file.type.Group" value="file" />
+
+          <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+
+          <property name="user.script" value="" />
+
+          <property name="ant.file.Group" value="C:\Users\Brend_000\Documents\GitHub\polyglot_group\Java\Group\build.xml" />
+
+          <property name="eclipse.pdebuild.scripts" value="/C:/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/scripts/" />
+
+          <property name="user.home" value="C:\Users\Brend_000" />
+
+          <property name="target" value="1.8" />
+
+          <property name="env.ProgramData" value="C:\ProgramData" />
+
+          <property name="env.SESSIONNAME" value="Console" />
+
+          <property name="env.ProgramFiles(x86)" value="C:\Program Files (x86)" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_111\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_111/bin/server;C:/Program Files/Java/jre1.8.0_111/bin;C:/Program Files/Java/jre1.8.0_111/lib/amd64;C:\app\BrendanPF\product\12.1.0\dbhome_1\bin;C:\Perl64\site\bin;C:\Perl64\bin;C:\ProgramData\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Ruby22-x64\bin;C:\Python34;C:\Ruby21\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Ruby22-x64\bin;C:\Users\Brend_000\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;C:\eclipse;;." />
+
+          <property name="env.NUMBER_OF_PROCESSORS" value="8" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.2 compiled on July 8 2013" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner colgroup.TestColGroup filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Brend_000\Documents\GitHub\polyglot_group\Java\Group\junit\TEST-colgroup.TestColGroup.xml crashfile=C:\Users\Brend_000\Documents\GitHub\polyglot_group\Java\Group\junitvmwatcher7313851993252567788.properties propsfile=C:\Users\Brend_000\Documents\GitHub\polyglot_group\Java\Group\junit1582128555870356185.properties" />
+
+          <property name="java.class.path" value="C:\Users\Brend_000\Documents\GitHub\polyglot_group\Java\Group\bin;C:\Users\Brend_000\Documents\GitHub\polyglot_group\Java\Utility\bin;C:\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar;C:\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar;C:\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant-launcher.jar;C:\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant.jar;C:\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant-junit.jar;C:\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant-junit4.jar" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="env.LOGONSERVER" value="\\HP-BRENDAN" />
+
+          <property name="env.windir" value="C:\WINDOWS" />
+
+          <property name="env.PROCESSOR_ARCHITECTURE" value="AMD64" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="sun.os.patch.level" value="" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="debuglevel" value="source,lines,vars" />
+
+          <property name="env.ProgramFiles" value="C:\Program Files" />
+
+          <property name="env.ANT_HOME" value="C:\eclipse\plugins\org.apache.ant_1.9.2.v201404171502" />
+
+          <property name="env.PROCESSOR_REVISION" value="3c03" />
+
+          <property name="eclipse.pdebuild.home" value="/C:/eclipse/plugins/org.eclipse.pde.build_3.9.0.v20140415-2029/./" />
+
+          <property name="java.io.tmpdir" value="C:\Users\BREND_~1\AppData\Local\Temp\" />
+
+          <property name="env.CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="env.RUBYLIB" value="..\lib" />
+
+          <property name="env.SystemRoot" value="C:\WINDOWS" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_111\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+
+          <property name="env.PERL5LIB" value="C:\Users\Brend_000\SkyDrive\Script\Perl\Lib" />
+
+          <property name="user.dir" value="C:\Users\Brend_000\Documents\GitHub\polyglot_group\Java\Group" />
+
+          <property name="env.LOCALAPPDATA" value="C:\Users\Brend_000\AppData\Local" />
+
+          <property name="line.separator" value="&#xd;&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY" />
+
+          <property name="env.Path" value="C:/Program Files/Java/jre1.8.0_111/bin/server;C:/Program Files/Java/jre1.8.0_111/bin;C:/Program Files/Java/jre1.8.0_111/lib/amd64;C:\app\BrendanPF\product\12.1.0\dbhome_1\bin;C:\Perl64\site\bin;C:\Perl64\bin;C:\ProgramData\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Ruby22-x64\bin;C:\Python34;C:\Ruby21\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\scala\bin;C:\Program Files\nodejs\;C:\Ruby22-x64\bin;C:\Users\Brend_000\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;C:\eclipse;" />
+
+          <property name="basedir" value="C:\Users\Brend_000\Documents\GitHub\polyglot_group\Java\Group" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="C:\eclipse\plugins\org.apache.ant_1.9.2.v201404171502\lib\ant.jar" />
+
+          <property name="env.USERNAME" value="Brend_000" />
+
+          <property name="source" value="1.8" />
+
+          <property name="env.SystemDrive" value="C:" />
+
+          <property name="file.encoding" value="Cp1252" />
+
+          <property name="env.USERDOMAIN" value="HP-BRENDAN" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="ant.project.invoked-targets" value="TestColGroup,junitreport" />
+
+          <property name="env.Platform" value="HPD" />
+
+          <property name="env.VBOX_MSI_INSTALL_PATH" value="C:\Program Files\Oracle\VirtualBox\" />
+
+          <property name="env.PROCESSOR_LEVEL" value="6" />
+
+      </properties>
+
+      <testcase classname="colgroup.TestColGroup" name="testKey[0]" time="0.055">
+          <failure message="keys expected:&lt;[A=2, Bx=1, Cc=1]&gt; but was:&lt;[A=2, B=1, Cc=1]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: keys expected:&lt;[A=2, Bx=1, Cc=1]&gt; but was:&lt;[A=2, B=1, Cc=1]&gt;
+	at colgroup.TestColGroup.testKey(TestColGroup.java:150)
+</failure>
+
+      </testcase>
+
+      <testcase classname="colgroup.TestColGroup" name="testValue[0]" time="0.004" />
+
+      <testcase classname="colgroup.TestColGroup" name="testAsIs[0]" time="0.002" />
+
+      <testcase classname="colgroup.TestColGroup" name="testKey[1]" time="0.004" />
+
+      <testcase classname="colgroup.TestColGroup" name="testValue[1]" time="0.002" />
+
+      <testcase classname="colgroup.TestColGroup" name="testAsIs[1]" time="0.002">
+          <failure message="(as is) expected:&lt;2&gt; but was:&lt;1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: (as is) expected:&lt;2&gt; but was:&lt;1&gt;
+	at colgroup.TestColGroup.testAsIs(TestColGroup.java:143)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[Doing constructor before test 0...
+Doing setup before test 0...
+Doing teardown after test 0...
+Doing constructor before test 0...
+Doing setup before test 0...
+
+Sorting by values
+=================
+Team  #Apps
+----  -----
+B       1
+Cc      1
+A       2
+Doing teardown after test 0...
+Doing constructor before test 0...
+Doing setup before test 0...
+
+Sorting by (as is)
+==================
+Team  #Apps
+----  -----
+Cc      1
+A       2
+B       1
+Doing teardown after test 0...
+Doing constructor before test 1...
+Doing setup before test 1...
+
+Sorting by keys
+===============
+Team  #Apps
+----  -----
+X      2
+Doing teardown after test 1...
+Doing constructor before test 1...
+Doing setup before test 1...
+
+Sorting by values
+=================
+Team  #Apps
+----  -----
+X      2
+Doing teardown after test 1...
+Doing constructor before test 1...
+Doing setup before test 1...
+Doing teardown after test 1...
+]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+</testsuites>

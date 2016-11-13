@@ -1,22 +1,14 @@
 CREATE OR REPLACE PACKAGE Utils AUTHID CURRENT_USER AS
 /***************************************************************************************************
-Description: This package contains general utility procedures. It was published initially with two
-             other utility packages for the articles linked in the link below:
+Name               : Utils
+Description        : This package contains general utility procedures
 
-                 Utils_TT:  Utility procedures for Brendan's TRAPIT API testing framework
-                 Timer_Set: Code timing utility
-
-Further details: 'TRAPIT - TRansactional API Testing in Oracle'
-                 http://aprogrammerwrites.eu/?p=1723
-
-Modification History
+Modification History :
 Who                  When        Which What
 -------------------- ----------- ----- -------------------------------------------------------------
-Brendan Furey        08-May-2016 1.0   Initial for first article
-Brendan Furey        21-May-2016 1.1   Replaced SYS.ODCI types with custom types L1_chr_arr etc.
-Brendan Furey        24-Jun-2016 1.2   Row_To_List added
-Brendan Furey        09-Jul-2016 1.3   Write_Log: added p_indent_level parameter
-Brendan Furey        04-Aug-2016 1.4   Delete_File, Write_File added
+Brendan Furey        04-May-2016 1.0   Created from earlier combined utils packages for any DB
+Brendan Furey        24-Jun-2016 1.1   Row_To_List added
+Brendan Furey        04-Aug-2016 1.2   Delete_File, Write_File added
 
 ***************************************************************************************************/
 
@@ -25,7 +17,7 @@ g_list_delimiter                 VARCHAR2(30) := '|';
 c_time_fmt              CONSTANT VARCHAR2(30) := 'HH24:MI:SS';
 c_datetime_fmt          CONSTANT VARCHAR2(30) := 'DD Mon RRRR ' || c_time_fmt;
 c_fld_delim             CONSTANT VARCHAR2(30) := '  ';
-Is_TT_Mode              CONSTANT BOOLEAN := Substr (SYS_Context ('userenv', 'client_info'), 1, 2) = 'UT';
+Is_UT_Mode              CONSTANT BOOLEAN := Substr (SYS_Context ('userenv', 'client_info'), 1, 2) = 'UT';
 c_session_id_if_TT               VARCHAR2(30);
 
 FUNCTION Create_Log (p_description VARCHAR2 DEFAULT NULL) RETURN PLS_INTEGER;
@@ -67,7 +59,4 @@ g_group_text            VARCHAR2(30);
 END Utils;
 /
 SHOW ERROR
-CREATE OR REPLACE PUBLIC SYNONYM Utils FOR Utils
-/
-GRANT EXECUTE ON Utils TO PUBLIC
-/
+
