@@ -1,6 +1,5 @@
 package colgroup;
 /***************************************************************************************************
-Name:        ColGroup.java
 Name: ColGroup.java                    Author: Brendan Furey                       Date: 22-Oct-2016
 
 Java component of polyglot project: a simple file-reading and group-counting module, with main
