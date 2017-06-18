@@ -1,1 +1,1 @@
-sqlplus -s lib/lib@pdborcl < ..\sql\Install_lib.sql
+sqlplus -s lib/lib@orclpdb < ..\sql\Install_lib.sql

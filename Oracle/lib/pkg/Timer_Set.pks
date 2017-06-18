@@ -11,9 +11,9 @@ Description: This package contains procedures to facilitate PL/SQL code timing. 
              below:
 
                  Utils:    General utilities
-                 UT_Utils: Utility procedures for Brendan's database unit testing framework
+                 Utils_TT: Utility procedures for Brendan's TRAPIT API testing framework
 
-Further details: 'Brendan's Database Unit Testing Framework'
+Further details: 'TRAPIT - TRansactional API Testing in Oracle'
                  http://aprogrammerwrites.eu/?p=1723
 
 Modification History

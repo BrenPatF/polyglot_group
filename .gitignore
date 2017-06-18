@@ -4,3 +4,4 @@ Eclipse/*
 .cache*
 .cache*
 *.csv
+*.pyc

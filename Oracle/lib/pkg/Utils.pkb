@@ -386,7 +386,7 @@ END Row_To_List;
 
 /***************************************************************************************************
 
-Delete_File: Delete OS file if present (used in ut)
+Delete_File: Deletes OS file if present (used in testing code)
 
 ***************************************************************************************************/
 PROCEDURE Delete_File (p_file_name VARCHAR2) IS -- OS file name
@@ -402,7 +402,8 @@ END Delete_File;
 
 /***************************************************************************************************
 
-Write_File: Open an OS file and write an input list of lines to it, then close it (used in ut)
+Write_File: Open an OS file and write an input list of lines to it, then close it (used in testing 
+            code)
 
 ***************************************************************************************************/
 PROCEDURE Write_File (p_file_name       VARCHAR2, -- file name

@@ -1,5 +1,6 @@
 CREATE OR REPLACE PACKAGE BODY Timer_Set AS
 /***************************************************************************************************
+
 Description: This package contains procedures to facilitate PL/SQL code timing. An initial version
              was published on Scribd in 2010, followed by updates to 2012. I copied the Scribd
              article to my blog for easier access recently:
@@ -11,9 +12,9 @@ Description: This package contains procedures to facilitate PL/SQL code timing. 
              below:
 
                  Utils:    General utilities
-                 UT_Utils: Utility procedures for Brendan's database unit testing framework
+                 Utils_TT: Utility procedures for Brendan's TRAPIT API testing framework
 
-Further details: 'Brendan's Database Unit Testing Framework'
+Further details: 'TRAPIT - TRansactional API Testing in Oracle'
                  http://aprogrammerwrites.eu/?p=1723
 
 Modification History
@@ -47,7 +48,7 @@ g_timer_set_list timer_set_arr;
 
 /***************************************************************************************************
 
-Construct: Construct a new timer set, returning its id
+Construct: Constructs a new timer set, returning its id
 
 ***************************************************************************************************/
 FUNCTION Construct (p_timer_set_name VARCHAR2) -- timer set name
@@ -81,7 +82,7 @@ END Construct;
 
 /***************************************************************************************************
 
-Destroy: Destroy a timer set
+Destroy: Destroys a timer set
 
 ***************************************************************************************************/
 PROCEDURE Destroy (p_timer_set_ind PLS_INTEGER) IS -- timer set id
@@ -93,7 +94,7 @@ END Destroy;
 
 /***************************************************************************************************
 
-Init_Time: Reset the prior time values, to current, for a timer set
+Init_Time: Resets the prior time values, to current, for a timer set
 
 ***************************************************************************************************/
 PROCEDURE Init_Time (p_timer_set_ind PLS_INTEGER) IS -- timer set id
@@ -106,7 +107,7 @@ END Init_Time;
 
 /***************************************************************************************************
 
-Increment_Time: Increment the timing accumulators for a timer set and timer
+Increment_Time: Increments the timing accumulators for a timer set and timer
 
 ***************************************************************************************************/
 PROCEDURE Increment_Time (p_timer_set_ind       PLS_INTEGER, -- timer set id
@@ -161,7 +162,7 @@ END Increment_Time;
 
 /***************************************************************************************************
 
-Get_Timer_Stats: Return the details for a given timer set and timer
+Get_Timer_Stats: Returns the details for a given timer set and timer
 
 ***************************************************************************************************/
 FUNCTION Get_Timer_Stats (p_timer_set_ind       PLS_INTEGER,                    -- timer set id
@@ -190,7 +191,7 @@ END Get_Timer_Stats;
 
 /***************************************************************************************************
 
-Timer_Avg_Ela_MS: Return the elapsed time in ms for a given timer set and timer
+Timer_Avg_Ela_MS: Returns the elapsed time in ms for a given timer set and timer
 
 ***************************************************************************************************/
 FUNCTION Timer_Avg_Ela_MS (p_timer_set_ind      PLS_INTEGER,   -- timer set id
@@ -207,7 +208,7 @@ END Timer_Avg_Ela_MS;
 
 /***************************************************************************************************
 
-Write_Header: Write column headers for timer set report
+Write_Header: Writes column headers for timer set report
 
 ***************************************************************************************************/
 PROCEDURE Write_Header (p_type          VARCHAR2,       -- value of first column header
@@ -220,7 +221,7 @@ END Write_Header;
 
 /***************************************************************************************************
 
-Form_Time: Format a numeric time as a string
+Form_Time: Formats a numeric time as a string
 
 ***************************************************************************************************/
 FUNCTION Form_Time (p_time      INTEGER,               -- time to format
@@ -234,7 +235,7 @@ END Form_Time;
 
 /***************************************************************************************************
 
-Form_Calls: Format number of calls as a string
+Form_Calls: Formats number of calls as a string
 
 ***************************************************************************************************/
 FUNCTION Form_Calls (p_calls    INTEGER)    -- number of calls
@@ -245,7 +246,7 @@ END Form_Calls;
 
 /***************************************************************************************************
 
-Write_Time_Line: Write a formatted timing line
+Write_Time_Line: Writes a formatted timing line
 
 ***************************************************************************************************/
 PROCEDURE Write_Time_Line (p_timer      VARCHAR2,            -- timer name
@@ -275,7 +276,7 @@ END Write_Time_Line;
 
 /***************************************************************************************************
 
-Write_Times: Write a report of the timings for a given timer set
+Write_Times: Writes a report of the timings for a given timer set
 
 ***************************************************************************************************/
 PROCEDURE Write_Times (p_timer_set_ind PLS_INTEGER) IS -- timer set id
@@ -351,7 +352,7 @@ END Write_Times;
 
 /***************************************************************************************************
 
-Summary_Times: Write a summary report on all the timer sets for the session
+Summary_Times: Writes a summary report on all the timer sets for the session
 
 ***************************************************************************************************/
 PROCEDURE Summary_Times IS
@@ -360,8 +361,8 @@ PROCEDURE Summary_Times IS
 
 /***************************************************************************************************
 
-Loop_Sets: Loop over the timer sets, printing the reports on each one. If boolean is set, we are
-          looping  only to determine the size of the timer set name column, for subsequent printing
+Loop_Sets: Loops over the timer sets, printing the reports on each one. If boolean is set, we are
+           looping  only to determine the size of the timer set name column, for subsequent printing
 
 ***************************************************************************************************/
   PROCEDURE Loop_Sets (p_sizing BOOLEAN DEFAULT FALSE) IS -- get size of timer set name column?

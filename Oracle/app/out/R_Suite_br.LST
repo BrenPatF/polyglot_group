@@ -112,17 +112,17 @@ Timing                                             0        1  SUCCESS
 Total                                              1        3  FAILURE
 ------------------------------------------  --------  -------  -------
 
-Timer Set: Col_Group.tt_AIP_List_Asis, Constructed at 13 Nov 2016 09:07:08, written at 09:07:08
+Timer Set: Col_Group.tt_AIP_List_Asis, Constructed at 18 Jun 2017 17:59:15, written at 17:59:16
 ===============================================================================================
-[Timer timed: Elapsed (per call): 0.01 (0.000006), CPU (per call): 0.00 (0.000000), calls: 1000, '***' denotes corrected line below]
+[Timer timed: Elapsed (per call): 0.02 (0.000015), CPU (per call): 0.01 (0.000010), calls: 1000, '***' denotes corrected line below]
 
 Timer       Elapsed         CPU         Calls       Ela/Call       CPU/Call
 -------  ----------  ----------  ------------  -------------  -------------
-Setup          0.07        0.03             2        0.03700        0.01500
+Setup          0.48        0.13             2        0.24000        0.06500
 Caller         0.00        0.00             2        0.00000        0.00000
-(Other)        0.01        0.01             1        0.00900        0.01000
+(Other)        0.00        0.00             1        0.00000        0.00000
 -------  ----------  ----------  ------------  -------------  -------------
-Total          0.08        0.04             5        0.01660        0.00800
+Total          0.48        0.13             5        0.09600        0.02600
 -------  ----------  ----------  ------------  -------------  -------------
 
 TRAPIT TEST: Col_Group.tt_AIP_Sort_By_Key
@@ -219,7 +219,7 @@ SCENARIO 2: Two copies/double-delimiter/first column {
 } 0 failed, of 1: SUCCESS
 =========================
 
-TIMING: Actual = 2, Expected <= 2: SUCCESS
+TIMING: Actual = 0, Expected <= 2: SUCCESS
 ==========================================
 
 SUMMARY for Col_Group.tt_AIP_Sort_By_Key
@@ -234,17 +234,17 @@ Timing                                             0        1  SUCCESS
 Total                                              1        5  FAILURE
 ------------------------------------------  --------  -------  -------
 
-Timer Set: Col_Group.tt_AIP_Sort_By_Key, Constructed at 13 Nov 2016 09:07:08, written at 09:07:08
+Timer Set: Col_Group.tt_AIP_Sort_By_Key, Constructed at 18 Jun 2017 17:59:16, written at 17:59:16
 =================================================================================================
-[Timer timed: Elapsed (per call): 0.01 (0.000006), CPU (per call): 0.00 (0.000000), calls: 1000, '***' denotes corrected line below]
+[Timer timed: Elapsed (per call): 0.00 (0.000000), CPU (per call): 0.00 (0.000000), calls: 1000, '***' denotes corrected line below]
 
 Timer       Elapsed         CPU         Calls       Ela/Call       CPU/Call
 -------  ----------  ----------  ------------  -------------  -------------
-Setup          0.03        0.03             2        0.01400        0.01500
-Caller         0.00        0.00             2        0.00150        0.00000
-(Other)        0.01        0.02             1        0.01000        0.02000
+Setup          0.28        0.02             2        0.13800        0.01000
+Caller         0.00        0.00             2        0.00000        0.00000
+(Other)        0.02        0.01             1        0.01500        0.01000
 -------  ----------  ----------  ------------  -------------  -------------
-Total          0.04        0.05             5        0.00820        0.01000
+Total          0.29        0.03             5        0.05820        0.00600
 -------  ----------  ----------  ------------  -------------  -------------
 
 TRAPIT TEST: Col_Group.tt_AIP_Sort_By_vALUE
@@ -340,7 +340,7 @@ SCENARIO 2: Two copies/double-delimiter/first column {
 } 0 failed, of 1: SUCCESS
 =========================
 
-TIMING: Actual = 1, Expected <= 2: SUCCESS
+TIMING: Actual = 0, Expected <= 2: SUCCESS
 ==========================================
 
 SUMMARY for Col_Group.tt_AIP_Sort_By_vALUE
@@ -355,17 +355,17 @@ Timing                                             0        1  SUCCESS
 Total                                              0        5  SUCCESS
 ------------------------------------------  --------  -------  -------
 
-Timer Set: Col_Group.tt_AIP_Sort_By_vALUE, Constructed at 13 Nov 2016 09:07:08, written at 09:07:08
+Timer Set: Col_Group.tt_AIP_Sort_By_vALUE, Constructed at 18 Jun 2017 17:59:16, written at 17:59:16
 ===================================================================================================
-[Timer timed: Elapsed (per call): 0.01 (0.000008), CPU (per call): 0.01 (0.000010), calls: 1000, '***' denotes corrected line below]
+[Timer timed: Elapsed (per call): 0.02 (0.000017), CPU (per call): 0.02 (0.000020), calls: 1000, '***' denotes corrected line below]
 
 Timer       Elapsed         CPU         Calls       Ela/Call       CPU/Call
 -------  ----------  ----------  ------------  -------------  -------------
-Setup          0.03        0.03             2        0.01450        0.01500
-Caller         0.00        0.00             2        0.00050        0.00000
-(Other)        0.01        0.02             1        0.01100        0.02000
+Setup          0.25        0.03             2        0.12350        0.01500
+Caller         0.00        0.00             2        0.00000        0.00000
+(Other)        0.00        0.00             1        0.00000        0.00000
 -------  ----------  ----------  ------------  -------------  -------------
-Total          0.04        0.05             5        0.00820        0.01000
+Total          0.25        0.03             5        0.04940        0.00600
 -------  ----------  ----------  ------------  -------------  -------------
 
 Suite Summary
@@ -373,11 +373,11 @@ Suite Summary
 
 Package.Procedure               Tests  Fails         ELA         CPU
 ------------------------------  -----  -----  ----------  ----------
-Col_Group.tt_AIP_List_Asis          3      1        0.08        0.04
-Col_Group.tt_AIP_Sort_By_Key        5      1        0.04        0.05
-Col_Group.tt_AIP_Sort_By_vALUE      5      0        0.04        0.05
+Col_Group.tt_AIP_List_Asis          3      1        0.48        0.13
+Col_Group.tt_AIP_Sort_By_Key        5      1        0.29        0.03
+Col_Group.tt_AIP_Sort_By_vALUE      5      0        0.25        0.03
 ------------------------------  -----  -----  ----------  ----------
-Total                              13      2        0.17        0.14
+Total                              13      2        1.02        0.19
 ------------------------------  -----  -----  ----------  ----------
 Others error in (): ORA-20001: Suite BRENDAN returned error status: ORA-06512: at "LIB.UTILS_TT", line 152
 ORA-06512: at "LIB.UTILS_TT", line 819

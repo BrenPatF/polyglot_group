@@ -91,7 +91,7 @@ END Init;
 
 /***************************************************************************************************
 
-Write_Suite_Results: Write out the results for a TRAPIT suite
+Write_Suite_Results: Writes out the results for a TRAPIT suite
 
 ***************************************************************************************************/
 PROCEDURE Write_Suite_Results (p_suite VARCHAR2) IS -- TRAPIT suite name
@@ -104,7 +104,7 @@ PROCEDURE Write_Suite_Results (p_suite VARCHAR2) IS -- TRAPIT suite name
 
   /***************************************************************************************************
 
-  Write_Test_Set: Write out the results for a TRAPIT suite, set of tests - summary line
+  Write_Test_Set: Writes out the results for a TRAPIT suite, set of tests - summary line
 
   ***************************************************************************************************/
   PROCEDURE Write_Test_Set (p_test_set_rec test_set_rec) IS -- test set record
@@ -191,7 +191,7 @@ PROCEDURE Check_TT_Results (p_proc_name                 VARCHAR2,      -- callin
     l_inp_is_empty               BOOLEAN;
     /***************************************************************************************************
 
-    Set_Result_Row: Assign a first value scalar, then a list of values to a single row of the output
+    Set_Result_Row: Assigns a first value scalar, then a list of values to a single row of the output
                     array
 
     ***************************************************************************************************/
@@ -339,7 +339,7 @@ PROCEDURE Check_TT_Results (p_proc_name                 VARCHAR2,      -- callin
     l_num_fails                  PLS_INTEGER := 0;
     /***************************************************************************************************
 
-    Set_Result_Row: Assign a first value scalar, then a list of values to a single row of the output
+    Set_Result_Row: Assigns a first value scalar, then a list of values to a single row of the output
                     array
 
     ***************************************************************************************************/
@@ -521,7 +521,7 @@ PROCEDURE Check_TT_Results (p_proc_name                 VARCHAR2,      -- callin
 
   /***************************************************************************************************
 
-  Detail_Section: Print the detailed test report returning scenario statistics for the summary
+  Detail_Section: Prints the detailed test report returning scenario statistics for the summary
 
   ***************************************************************************************************/
   PROCEDURE Detail_Section  (x_num_fails_sce       IN OUT L1_num_arr,    -- number of failed tests by scenario
@@ -567,7 +567,7 @@ PROCEDURE Check_TT_Results (p_proc_name                 VARCHAR2,      -- callin
 
   /***************************************************************************************************
 
-  Summary_Section: Print the summary test report using scenario statistics from the  detailed section
+  Summary_Section: Prints the summary test report using scenario statistics from the  detailed section
 
   ***************************************************************************************************/
   PROCEDURE Summary_Section (p_num_fails_sce        L1_num_arr,     -- number of failed tests by scenario
@@ -612,7 +612,7 @@ PROCEDURE Check_TT_Results (p_proc_name                 VARCHAR2,      -- callin
 
   /***************************************************************************************************
 
-  Set_Global_Summary: Assign statistics to a new record in the global suite array for printing at the
+  Set_Global_Summary: Assigns statistics to a new record in the global suite array for printing at the
                       end
 
   ***************************************************************************************************/
@@ -793,7 +793,7 @@ END Get_View;
 
 /***************************************************************************************************
 
-Run_Suite: Run a TRAPIT suite
+Run_Suite: Runs a TRAPIT suite
 
 ***************************************************************************************************/
 PROCEDURE Run_Suite (p_suite_id PLS_INTEGER) IS -- suite id, must be one of the named constants in the spec

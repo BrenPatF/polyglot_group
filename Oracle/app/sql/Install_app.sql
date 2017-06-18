@@ -8,6 +8,7 @@ Modification History
 Who                  When        Which What
 -------------------- ----------- ----- -------------------------------------------------------------
 Brendan Furey        04-Oct-2016 1.0   Created (from 4 April 2016)
+Brendan Furey        10-Jun-2017 1.1   TT_Utils -> Utils_TT
 
 ***************************************************************************************************/
 SET TRIMSPOOL ON
@@ -40,7 +41,7 @@ CREATE OR REPLACE SYNONYM Utils FOR lib.Utils
 /
 CREATE OR REPLACE SYNONYM Timer_Set FOR lib.Timer_Set
 /
-CREATE OR REPLACE SYNONYM TT_Utils FOR lib.TT_Utils
+CREATE OR REPLACE SYNONYM Utils_TT FOR lib.Utils_TT
 /
 PROMPT EXTERNAL table creation
 PROMPT =======================

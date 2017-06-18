@@ -1,13 +1,22 @@
 package colgroup;
 /***************************************************************************************************
-Name:        TestColGroup.java
+Name: TestColGroup.java                Author: Brendan Furey                       Date: 22-Oct-2016
 
-Description: Junit testing class for Col_Group class. Uses Parameterized.class to data-drive
-                                                                               
-Modification History
-Who                  When        Which What
--------------------- ----------- ----- -------------------------------------------------------------
-B. Furey             22-Oct-2016 1.0   Created                       
+Java component of polyglot project: a simple file-reading and group-counting module, with main
+program, unit testing program, code timing and general utility packages, implemented in multiple
+languages for learning purposes: https://github.com/BrenPatF/polyglot_group
+
+See also: 'Oracle and JUnit Data Driven Testing: An Example' on the Oracle and Java components,
+http://aprogrammerwrites.eu/?p=1860
+
+========================================
+|  Driver  |  Class/API  |  Utility    |
+===========|=============|==============
+|  Main    |  Col Group  |  Utils      |
+| *Tester* |             |  Timer Set  |
+========================================
+
+Unit test program.
 
 ***************************************************************************************************/
 import static org.junit.Assert.*;
@@ -34,14 +43,16 @@ import org.junit.runners.Parameterized;
 public class TestColGroup {
 /***************************************************************************************************
 
-Private instance variables: 2 scenarios, input, and expected records declared here, initially in 
+Private instance variables: 2 scenarios, input, and expected records declared here, initially in
 2-level generic arrays, but expected records transferred to List for assertion
 
 ***************************************************************************************************/
   private ColGroup colGroup = null;
   private String testFile = "../../Input/ut_group.csv";
-  private String[][] testLines = new String[][] { 
-      {"0,1,Cc,3", "00,1,A,9", "000,1,B,27", "0000,1,A,81"}, 
+
+// setup data indexed by scenario
+  private String[][] testLines = new String[][] {
+      {"0,1,Cc,3", "00,1,A,9", "000,1,B,27", "0000,1,A,81"},
       {"X;;1;;A", "X;;1;;A"}
   };
   private String[] testDelim = new String[] {",", ";;"};
@@ -50,20 +61,21 @@ Private instance variables: 2 scenarios, input, and expected records declared he
   private String delim;
   private int colnum;
 
-  private String[][] keysK = new String[][] { 
-      {"A", "Bx", "Cc"}, 
+// expected values are lists of 2-tuples for sorted lists; for as is list just counts (passed by test_data)
+  private String[][] keysK = new String[][] {
+      {"A", "Bx", "Cc"},  // Bx is deliberately wrong, B is the correct value
       {"X"}
   };
-  private int[][] valuesK = new int[][] { 
-      {2, 1, 1}, 
+  private int[][] valuesK = new int[][] {
+      {2, 1, 1},
       {2}
   };
-  private String[][] keysV = new String[][] { 
+  private String[][] keysV = new String[][] {
       {"B", "Cc", "A"},
       {"X"}
   };
-  private int[][] valuesV = new int[][] { 
-      {1, 1, 2}, 
+  private int[][] valuesV = new int[][] {
+      {1, 1, 2},
       {2}
   };
   private int expAsIs;
@@ -79,14 +91,14 @@ Private instance variables: 2 scenarios, input, and expected records declared he
 
   /***************************************************************************************************
 
-  TestColGroup: Constructor function, which sets the instance variables for given scenario (testNum), and
+  TestColGroup: Constructor sets the instance variables for given scenario (testNum), and
                 is called before each test with parameters passed via test_data (see end)
 
   ***************************************************************************************************/
   public TestColGroup (int   testNum,   // test scenario number
-                  int   nGroups) { // number of groups
+                       int   nGroups) { // number of groups
 
-    System.out.println("Doing constructor before test "+testNum+"...");
+    System.out.println("Doing TestColGroup before test "+testNum+"...");
     this.lines = Arrays.asList (testLines[testNum]);
     this.delim = testDelim[testNum];
     this.colnum = testColnum[testNum];
@@ -103,7 +115,7 @@ Private instance variables: 2 scenarios, input, and expected records declared he
   /***************************************************************************************************
 
   getGroup: Before each test method to write the test file and instantiate base object, using instance
-            variables set for the scenario in TestCG3
+            variables set for the scenario in TestColGroup
 
   ***************************************************************************************************/
   @Before
@@ -139,32 +151,27 @@ Private instance variables: 2 scenarios, input, and expected records declared he
   @Test
   public void testAsIs() {
 
-    List<Map.Entry<String,Long>> actList = colGroup.listAsIs();
-    assertEquals ("(as is)", expAsIs, actList.size());
-    colGroup.prList("(as is)", actList);
+    assertEquals ("(as is)", expAsIs, colGroup.listAsIs().size());
   }
   @Test
   public void testKey() {
 
-    List<Map.Entry<String,Long>> actList = colGroup.sortByKey();
-    assertEquals ("keys", expListK, actList);
-    colGroup.prList("keys", actList);
-  }
+    assertEquals ("keys", expListK, colGroup.sortByKey());
+   }
   @Test
   public void testValue() {
-    List<Map.Entry<String,Long>> actList = colGroup.sortByValue();
-    assertEquals ("values", expListV, actList);
-    colGroup.prList("values", actList);
+    assertEquals ("values", expListV, colGroup.sortByValue());
   }
   /***************************************************************************************************
 
   test_data: @Parameters section allows passing of data into tests per scenario; neater to pass in a
-             pointer to the instance arrays for most of the data
-
+             pointer to the instance arrays for most of the data - we pass scenario # as first
+             parameter and actual expected value for a simple count test as second
   ***************************************************************************************************/
   @Parameters
   public static Collection<Object[]> test_data() {
     Object[][] data = new Object[][] { {0, 3}, {1, 2} }; // 2 records, columns = scenario #, # groups
+                                                         // 2 is deliberately wrong, 1 is the correct value
     return Arrays.asList(data);
   }
 }

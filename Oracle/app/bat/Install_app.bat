@@ -1,1 +1,1 @@
-sqlplus -s app/app@pdborcl < ..\sql\Install_app.sql
+sqlplus -s app/app@orclpdb < ..\sql\Install_app.sql

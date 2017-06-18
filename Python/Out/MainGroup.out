@@ -4,34 +4,34 @@ Counts sorted by (as is)
 ========================
 Team         #apps
 -----------  -----
-Tottenham     1288
-Wigan         1036
-QPR           1517
-Aston Villa    685
 team_name_2      1
-Norwich       1229
-West Brom     1219
-Man City      1099
-Blackburn       33
-Liverpool     1227
-Stoke City    1170
-Arsenal        534
-Swansea       1180
-Wolves          31
-Newcastle     1247
-Fulham        1209
 team_name_1      1
-Reading       1167
-Sunderland    1162
-Southampton   1110
-Everton       1147
+West Brom     1219
+Swansea       1180
+Blackburn       33
 Bolton          37
-West Ham      1126
 Chelsea       1147
+Arsenal        534
+Everton       1147
+Tottenham     1288
+Fulham        1209
+QPR           1517
+Liverpool     1227
+Sunderland    1162
+Man City      1099
 Man Utd       1231
+Newcastle     1247
+Stoke City    1170
+Wolves          31
+Aston Villa    685
+Wigan         1036
+Norwich       1229
+West Ham      1126
+Reading       1167
+Southampton   1110
 
-Counts sorted by (as is)
-========================
+Counts sorted by key
+====================
 Team         #apps
 -----------  -----
 Arsenal        534
@@ -60,8 +60,8 @@ Wolves          31
 team_name_1      1
 team_name_2      1
 
-Counts sorted by (as is)
-========================
+Counts sorted by value (item_getter)
+====================================
 Team         #apps
 -----------  -----
 team_name_1      1
@@ -90,8 +90,8 @@ Newcastle     1247
 Tottenham     1288
 QPR           1517
 
-Counts sorted by (as is)
-========================
+Counts sorted by value (lambda)
+===============================
 Team         #apps
 -----------  -----
 team_name_1      1
@@ -120,18 +120,18 @@ Newcastle     1247
 Tottenham     1288
 QPR           1517
 
-Timer set: Timer_x, constructed at 2016-10-30 14:34:12, written at 2016-10-30 14:34:12
+Timer set: Timer_x, constructed at 2017-06-18 17:49:00, written at 2017-06-18 17:49:00
 ======================================================================================
 [Timer timed: Elapsed (per call): 0.00 (0.00000), CPU (per call): 0.01 (0.00000), calls: 10000, "***" denotes corrected line below]
 
 Timer                    Elapsed         CPU       Calls       Ela/Call       CPU/Call
 --------------------  ----------  ----------  ----------  -------------  -------------
-ColGroup                    0.05        0.04           1        0.04688        0.03991
-list_as_is                  0.00        0.00           1        0.00000        0.00012
+ColGroup                    0.05        0.05           1        0.04688        0.04781
+list_as_is                  0.00        0.00           1        0.00000        0.00013
 sort_by_key                 0.00        0.00           1        0.00000        0.00011
 sort_by_valueIG             0.00        0.00           1        0.00000        0.00011
-sort_by_value_lambda        0.00        0.00           1        0.00000        0.00011
-(Other)                     0.00        0.00           1        0.00000        0.00004
+sort_by_value_lambda        0.00        0.00           1        0.00000        0.00017
+(Other)                     0.00        0.00           1        0.00000        0.00002
 --------------------  ----------  ----------  ----------  -------------  -------------
-Total                       0.05        0.04           6        0.00781        0.00673
+Total                       0.05        0.05           6        0.00781        0.00806
 --------------------  ----------  ----------  ----------  -------------  -------------

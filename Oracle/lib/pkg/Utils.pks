@@ -1,7 +1,13 @@
 CREATE OR REPLACE PACKAGE Utils AUTHID CURRENT_USER AS
 /***************************************************************************************************
-Name               : Utils
-Description        : This package contains general utility procedures
+Description: This package contains general utility procedures. It was published initially with two
+             other utility packages for the articles linked in the link below:
+
+                 Utils_TT:  Utility procedures for Brendan's TRAPIT API testing framework
+                 Timer_Set: Code timing utility
+
+Further details: 'TRAPIT - TRansactional API Testing in Oracle'
+                 http://aprogrammerwrites.eu/?p=1723
 
 Modification History :
 Who                  When        Which What

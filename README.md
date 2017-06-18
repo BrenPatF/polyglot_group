@@ -1,6 +1,15 @@
 # polyglot_group
 
-A simple file-reading and group-counting module, with main program and unit testing program, implemented in multiple languages for learning purposes. Headers and parameter comments will be added in time, as will some blog articles (Brendan's Blog - http://aprogrammerwrites.eu)
+A simple file-reading and group-counting module, with main program, unit testing program, code timing and general utility packages, implemented in multiple languages for learning purposes: https://github.com/BrenPatF/polyglot_group
+
+See also: "Oracle and JUnit Data Driven Testing: An Example", http://aprogrammerwrites.eu/?p=1860, on the Oracle and Java components
+
+========================================
+|  Driver  |  Class/API  |  Utility    |
+===========|=============|==============
+|  Main    |  Col Group  |  Utils      |
+|  Tester  |             |  Timer Set  |
+========================================
 
 - Perl
 - Ruby

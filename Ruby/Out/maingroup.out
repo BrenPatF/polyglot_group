@@ -2,8 +2,8 @@
 ../../Input/fantasy_premier_league_player_stats.csv
 ===================================================
 
-Sorting by (as is)
-==================
+Counts sorted by (as is)
+========================
 Team         #apps
 -----------  -----
 team_name_2      1
@@ -32,8 +32,8 @@ West Ham      1126
 Reading       1167
 Southampton   1110
 
-Sorting by key
-==============
+Counts sorted by key
+====================
 Team         #apps
 -----------  -----
 Arsenal        534
@@ -62,8 +62,8 @@ Wolves          31
 team_name_1      1
 team_name_2      1
 
-Sorting by value
-================
+Counts sorted by value
+======================
 Team         #apps
 -----------  -----
 team_name_1      1
@@ -92,17 +92,17 @@ Newcastle     1247
 Tottenham     1288
 QPR           1517
 
-Timer set: Timer_x, constructed at 2016-10-30 14:38:08 +0000, written at 2016-10-30 14:38:08 +0000
+Timer set: Timer_x, constructed at 2017-06-18 17:47:12 +0100, written at 2017-06-18 17:47:12 +0100
 ==================================================================================================
-[Timer timed: Elapsed (per call): 0.02 (0.00000), USR (per call): 0.03 (0.00000), SYS (per call): 0.00 (0.00000), calls: 10000, "***" denotes corrected line below]
+[Timer timed: Elapsed (per call): 0.00 (0.00000), USR (per call): 0.00 (0.00000), SYS (per call): 0.00 (0.00000), calls: 10000, "***" denotes corrected line below]
 
 Timer             Elapsed         USR         SYS       Calls       Ela/Call       USR/Call       SYS/Call
 -------------  ----------  ----------  ----------  ----------  -------------  -------------  -------------
-ColGroup             0.06        0.06        0.00           1        0.05604        0.06200        0.00000
+ColGroup             0.07        0.08        0.00           1        0.06901        0.07800        0.00000
 list_as_is           0.00        0.00        0.00           1        0.00000        0.00000        0.00000
 sort_by_key          0.00        0.00        0.00           1        0.00000        0.00000        0.00000
 sort_by_value        0.00        0.00        0.00           1        0.00000        0.00000        0.00000
 (Other)              0.00        0.00        0.00           1        0.00000        0.00000        0.00000
 -------------  ----------  ----------  ----------  ----------  -------------  -------------  -------------
-Total                0.06        0.06        0.00           5        0.01121        0.01240        0.00000
+Total                0.07        0.08        0.00           5        0.01380        0.01560        0.00000
 -------------  ----------  ----------  ----------  ----------  -------------  -------------  -------------

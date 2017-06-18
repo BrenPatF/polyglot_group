@@ -4,31 +4,31 @@ Sorting by (as is)
 ==================
 Team         #apps
 -----------  -----
-Sunderland    1162
-Arsenal        534
-Wolves          31
 Blackburn       33
+Wolves          31
 Everton       1147
-Aston Villa    685
+West Brom     1219
+Fulham        1209
+Liverpool     1227
+Arsenal        534
 team_name_1      1
 Reading       1167
 Southampton   1110
-Man City      1099
-Bolton          37
-Newcastle     1247
-Fulham        1209
-West Brom     1219
-Stoke City    1170
-Wigan         1036
-Liverpool     1227
-Man Utd       1231
-Tottenham     1288
 Norwich       1229
-Chelsea       1147
-QPR           1517
-team_name_2      1
 West Ham      1126
+Chelsea       1147
+Sunderland    1162
 Swansea       1180
+Bolton          37
+Wigan         1036
+team_name_2      1
+Tottenham     1288
+Newcastle     1247
+Aston Villa    685
+Man Utd       1231
+QPR           1517
+Stoke City    1170
+Man City      1099
 
 Sorting by key
 ==============
@@ -90,17 +90,17 @@ Newcastle     1247
 Tottenham     1288
 QPR           1517
 
-Timer Set: Group Counter, constructed at 30/10/16 14:19:22, written at 14:19:22
+Timer Set: Group Counter, constructed at 18/06/17 17:51:02, written at 17:51:02
 ===============================================================================
-[Timer timed: Elapsed (per call): 0.02 (0.000002), CPU (per call): 0.03 (0.000003), calls: 10000, '***' denotes corrected line below]
+[Timer timed: Elapsed (per call): 0.02 (0.000002), CPU (per call): 0.02 (0.000002), calls: 10000, '***' denotes corrected line below]
 
 Timer           Elapsed         CPU      = User    + System       Calls       Ela/Call       CPU/Call
 -----------  ----------  ----------  ----------  ----------  ----------  -------------  -------------
-Open               0.13        0.09        0.09        0.00           1        0.13316        0.09300
-listAsIs           0.02        0.00        0.00        0.00           1        0.01620        0.00000
-sortByKey          0.00        0.00        0.00        0.00           1        0.00008        0.00000
-sortByValue        0.00        0.00        0.00        0.00           1        0.00008        0.00000
+Open               0.09        0.09        0.09        0.00           1        0.08743        0.09400
+listAsIs           0.00        0.00        0.00        0.00           1        0.00010        0.00000
+sortByKey          0.00        0.00        0.00        0.00           1        0.00006        0.00000
+sortByValue        0.00        0.00        0.00        0.00           1        0.00006        0.00000
 (Other)            0.00        0.00        0.00        0.00           1        0.00001        0.00000
 -----------  ----------  ----------  ----------  ----------  ----------  -------------  -------------
-Total              0.15        0.09        0.09        0.00           5        0.02990        0.01860
+Total              0.09        0.09        0.09        0.00           5        0.01753        0.01880
 -----------  ----------  ----------  ----------  ----------  ----------  -------------  -------------

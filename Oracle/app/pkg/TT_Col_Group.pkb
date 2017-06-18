@@ -1,16 +1,27 @@
 CREATE OR REPLACE PACKAGE BODY TT_Col_Group AS
 /***************************************************************************************************
+Name: TT_Col_Group.pkb                 Author: Brendan Furey                       Date: 05-Oct-2016
 
-Description: TRAPIT (TRansactional API Testing) package for Col_Group
+Oracle component of polyglot project: a simple file-reading and group-counting module, with unit
+testing programs, code timing and general utility packages, implemented in multiple languages for
+learning purposes: https://github.com/BrenPatF/polyglot_group
 
-Further details: 'TRAPIT - TRansactional API Testing in Oracle'
-                 http://aprogrammerwrites.eu/?p=1723
+The Oracle component does not have a main program, but two testing programs, one using utPLSQL, and
+the other the author's own framework:
 
-Modification History
-Who                  When        Which What
--------------------- ----------- ----- -------------------------------------------------------------
-Brendan Furey        22-Oct-2016 1.0   Created
-Brendan Furey        13-Nov-2016 1.1   Utils_TT -> Utils_TT
+'TRAPIT - TRansactional API Testing in Oracle', http://aprogrammerwrites.eu/?p=1723
+
+See also: 'Oracle and JUnit Data Driven Testing: An Example' on the Oracle and Java components,
+http://aprogrammerwrites.eu/?p=1860
+
+===========================================
+|  Driver     |  Class/API  |  Utility    |
+==============|=============|==============
+|  UT Tester  |  Col Group  |  Utils      |
+| *TT Tester* |             |  Timer Set  |
+===========================================
+
+TRAPIT (TRansactional API Testing) package body for Col_Group.
 
 ***************************************************************************************************/
 
@@ -74,7 +85,7 @@ PROCEDURE Do_Test (p_proc_name VARCHAR2, p_exp_2lis L2_chr_arr, p_out_group_lis 
 
   /***************************************************************************************************
 
-  Call_Proc: Calls the base method according to calling procedure, and converts record lists to 
+  Call_Proc: Calls the base method according to calling procedure, and converts record lists to
              delimited form, and populates the actual list for later checking
 
   ***************************************************************************************************/
@@ -115,7 +126,7 @@ BEGIN
     Setup (p_file              => c_prms_2lis(i)(1),
            p_delim             => c_prms_2lis(i)(2),
            p_colnum            => c_prms_2lis(i)(3),
-           p_dat_lis           => c_file_2lis(i),    -- data file inputs 
+           p_dat_lis           => c_file_2lis(i),    -- data file inputs
            x_inp_2lis          => l_inp_3lis(i));
     Timer_Set.Increment_Time (l_timer_set, 'Setup');
 
