@@ -44,7 +44,7 @@ class TimerSet (timerSetName : String) { // timer set name: implicit instance va
   getTimes: Gets CPU and elapsed times using system calls and return as tuple
 
   ***************************************************************************************************/
-  def getTimes = {
+  private def getTimes = {
     val ela = System.nanoTime()
     val bean = ManagementFactory.getThreadMXBean()
     val usr = bean.getCurrentThreadUserTime()
@@ -140,7 +140,7 @@ class TimerSet (timerSetName : String) { // timer set name: implicit instance va
         "), SYS (per call): " + trimTime(timerTimes._3, timeDp) + " (" + trimTime(timerTimes._3/timerTimes._4, timeRatioDp+3) +
         "), calls: " + (timerTimes._4).toString + "]\n")
 
-    val maxName = timerHash.keysIterator.map(_.length).max
+    val maxName = math.max(othTimer.length, timerHash.keysIterator.map(_.length).max)
     val unders = Utils.colHeaders(List(
                   ("Timer",     -maxName),
                   ("Elapsed",   timeWidth+timeDp),

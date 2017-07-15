@@ -19,12 +19,7 @@ http://aprogrammerwrites.eu/?p=1860
 Unit test program.
 
 Description: Demo Scala package for polyglot project. Testing class for ColGroup class. Uses
-             Parameterized.class to data-drive
-
-Modification History
-Who                  When        Which What
--------------------- ----------- ----- -------------------------------------------------------------
-B. Furey             22-Oct-2016 1.0   Created
+             FunSuite testing package
 
 ***************************************************************************************************/
 import org.scalatest._

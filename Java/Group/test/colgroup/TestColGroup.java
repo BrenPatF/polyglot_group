@@ -18,6 +18,9 @@ http://aprogrammerwrites.eu/?p=1860
 
 Unit test program.
 
+Description: Demo Java package for polyglot project. Testing class for ColGroup class. Uses
+             Parameterized.class to data-drive
+
 ***************************************************************************************************/
 import static org.junit.Assert.*;
 
