@@ -51,16 +51,16 @@ Private instance constants: 2 scenarios, input, and expected records declared he
   setup: Writes the test file and instantiates base object
 
   ***************************************************************************************************/
-  def setup(datasetNum : Int) : ColGroup = { // scenario index
+  private def setup(datasetNum : Int) : ColGroup = { // scenario index
     Files.write (Paths.get (testFile), lines(datasetNum).asJava, StandardCharsets.UTF_8 )
     return new ColGroup (testFile, delim(datasetNum), col(datasetNum))
   }
   /***************************************************************************************************
 
-  teardown: Removes test input file, called by test/unit package
+  teardown: Removes test input file
 
   ***************************************************************************************************/
-  def teardown() {
+  private def teardown() {
     Files.delete(Paths.get (testFile))
   }
   /***************************************************************************************************
