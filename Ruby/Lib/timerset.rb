@@ -67,7 +67,7 @@ def _write_time_line(timer, max_name, ela, usr, sys, calls)
                       _form_time(sys/calls, TIME_RATIO_DP)])
   cpu = usr + sys
   if timer != "***" && cpu/calls < 10 * ($timer_times[1] + $timer_times[2]) && cpu > 0.1
-    _write_time_line("***", 3, ela - calls*$timer_times[0], usr - calls*$timer_times[1] , sys - calls*$timer_times[2], calls)
+    _write_time_line("***", max_name, ela - calls*$timer_times[0], usr - calls*$timer_times[1] , sys - calls*$timer_times[2], calls)
   end
 end
 

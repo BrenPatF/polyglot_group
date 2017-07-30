@@ -1,0 +1,13 @@
+Scenario 0...
+...listAsIs                   OK
+*** [ [ 'A', 2 ], [ 'B', 1 ], [ 'Cc', 1 ] ] deepEqual [ [ 'A', 2 ], [ 'Bx', 1 ], [ 'Cc', 1 ] ]
+...sortByKey                  NOT OK
+...sortByValue                OK
+Scenario 1...
+*** 1 deepEqual 2
+...listAsIs                   NOT OK
+...sortByKey                  OK
+...sortByValue                OK
+
+Summary: 6 tests run, 2 failed.
+===============================
