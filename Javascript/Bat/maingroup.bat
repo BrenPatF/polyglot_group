@@ -1,1 +1,1 @@
-node ..\Code\maingroup.js  > ..\Out\maingroup.out 2> ..\Out\maingroup.err
+node ..\Code\MainGroup.js  > ..\Out\MainGroup.out 2> ..\Out\MainGroup.err

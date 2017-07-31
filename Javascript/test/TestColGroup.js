@@ -20,7 +20,7 @@ Unit test program.
 
 Notes:
 - uses no framework, only assert
--ava briefly tried but rejected for issues with stdout
+- ava briefly tried but rejected for issues with stdout
 - exceptions caught so as to report on full set of tests
 
 ***************************************************************************************************/
@@ -43,39 +43,39 @@ const expAsis = [3, 2]; // 2 is deliberately wrong, 1 is the correct value
 const expK = [[["A",2],["Bx",1],["Cc",1]], [["X",2]]]; // Bx is deliberately wrong, B is the correct value
 const expV = [[["B",1],["Cc",1],["A",2]], [["X",2]]];
 
-var 	nTst = 0;
-var 	nErr = 0;
+var     nTst = 0;
+var     nErr = 0;
 
 function setup (datasetNum) { // scenario index
 
-	fs.writeFileSync (INPUT_FILE, LINES[datasetNum]);
+    fs.writeFileSync (INPUT_FILE, LINES[datasetNum]);
     return new ColGroup (INPUT_FILE, DELIM[datasetNum], COL[datasetNum]);
 };
 
 function teardown() {
-	fs.unlinkSync (INPUT_FILE);
+    fs.unlinkSync (INPUT_FILE);
 };
 
 function test (name, act, exp) {
 
-	nTst++;
-	try	{
-		assert.deepEqual (act, exp);
-		Utils.write (Utils.lJust ('...' + name, 30) + 'OK');
-	}
-	catch (oException) {
-		Utils.write ('*** ' + oException.message);
-		Utils.write (Utils.lJust ('...' + name, 30) + 'NOT OK');
-		nErr++;
-	}
-	teardown();
+    nTst++;
+    try {
+        assert.deepEqual (act, exp);
+        Utils.write (Utils.lJust ('...' + name, 30) + 'OK');
+    }
+    catch (oException) {
+        Utils.write ('*** ' + oException.message);
+        Utils.write (Utils.lJust ('...' + name, 30) + 'NOT OK');
+        nErr++;
+    }
+    teardown();
 
 };
 
 for (let i = 0; i < LINES.length; i++) {
-	Utils.write ('Scenario ' + i + '...');
-	test ('listAsIs',		setup(i).listAsIs().length, expAsis[i]);
-	test ('sortByKey',		setup(i).sortByKey(),		expK[i]);
-	test ('sortByValue',	setup(i).sortByValue(),		expV[i]);
+    Utils.write ('Scenario ' + i + '...');
+    test ('listAsIs',       setup(i).listAsIs().length, expAsis[i]);
+    test ('sortByKey',      setup(i).sortByKey(),       expK[i]);
+    test ('sortByValue',    setup(i).sortByValue(),     expV[i]);
 };
 Utils.heading ('Summary: ' + nTst + ' tests run, ' + nErr + ' failed.');

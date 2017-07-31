@@ -32,7 +32,7 @@ _getTimes: Gets CPU and elapsed times using system calls and return in object
 function _getTimes () {
     let usr = 0, sys = 0;
     const ela = +new Date();
-	const cpus = os.cpus();
+    const cpus = os.cpus();
 
     for (var cpu of cpus) {
         usr += cpu.times.user;
@@ -64,7 +64,7 @@ writeTimeLine: Writes a formatted timing line
 
 ***************************************************************************************************/
 function _writeTimeLine (timer, maxName, ela, usr, sys, calls) {
-    Utils.prListAsLine ([_formName(timer,     maxName),			
+    Utils.prListAsLine ([_formName(timer,     maxName),         
                          _formTime(ela,       TIME_DP),
                          _formTime(usr,       TIME_DP),
                          _formTime(sys,       TIME_DP),
@@ -72,19 +72,19 @@ function _writeTimeLine (timer, maxName, ela, usr, sys, calls) {
                          _formTime(ela/calls, TIME_RATIO_DP),
                          _formTime(usr/calls, TIME_RATIO_DP),
                          _formTime(sys/calls, TIME_RATIO_DP)]);
-	const cpu = usr + sys;
-	if (timer != "***" && cpu/calls < 10 * (timerTimes.usr + timerTimes.sys) && cpu > 0.1) {
-		_writeTimeLine ("***", maxName, ela - calls*timerTimes.ela, usr - calls*timerTimes.usr , sys - calls*timerTimes.sys, calls);
-	};
+    const cpu = usr + sys;
+    if (timer != "***" && cpu/calls < 10 * (timerTimes.usr + timerTimes.sys) && cpu > 0.1) {
+        _writeTimeLine ("***", maxName, ela - calls*timerTimes.ela, usr - calls*timerTimes.usr , sys - calls*timerTimes.sys, calls);
+    };
 };
 
 class TimerSet {
 
-	/***************************************************************************************************
+    /***************************************************************************************************
 
-	TimerSet: Constructor sets the timer set name and initialises the instance timing arrays
+    TimerSet: Constructor sets the timer set name and initialises the instance timing arrays
 
-	***************************************************************************************************/
+    ***************************************************************************************************/
     constructor (timerSetName) { // timer set name
         this.timerSetName = timerSetName;
         this.timBeg = _getTimes();
@@ -93,20 +93,20 @@ class TimerSet {
         this.stime = Date().substring(0,24);
     }
 
-	/***************************************************************************************************
+    /***************************************************************************************************
 
-	initTime: Initialises (or resets) the instance timing array
+    initTime: Initialises (or resets) the instance timing array
 
-	***************************************************************************************************/
+    ***************************************************************************************************/
     initTime() {
         this.timPri = _getTimes();
     };
 
-	/***************************************************************************************************
+    /***************************************************************************************************
 
-	incrementTime: Increments the timing accumulators for a timer set and timer
+    incrementTime: Increments the timing accumulators for a timer set and timer
 
-	***************************************************************************************************/
+    ***************************************************************************************************/
     incrementTime (timerName) { // timer name
 
         const initHashVal = {ela : 0, usr : 0, sys : 0, calls : 0};
@@ -120,29 +120,29 @@ class TimerSet {
         this.initTime();
     };
 
-	/***************************************************************************************************
+    /***************************************************************************************************
 
-	writeTimes: Writes a report of the timings for the timer set
+    writeTimes: Writes a report of the timings for the timer set
 
-	***************************************************************************************************/
+    ***************************************************************************************************/
     writeTimes() {
         const tim = _getTimes();
         const totTim = {ela : tim.ela - this.timBeg.ela, usr : tim.usr - this.timBeg.usr, sys : tim.sys - this.timBeg.sys};
 
-		const timerTimer = new TimerSet ('timer');
-		for (let i = 0; i < SELF_RANGE; i++) { timerTimer.incrementTime('x'); };
-		timerTimes = timerTimer.timerHash.get('x');
+        const timerTimer = new TimerSet ('timer');
+        for (let i = 0; i < SELF_RANGE; i++) { timerTimer.incrementTime('x'); };
+        timerTimes = timerTimer.timerHash.get('x');
 
-		const maxName = Utils.maxLen (this.timerHash);
+        const maxName = Utils.maxLen (this.timerHash);
         Utils.heading ("Timer set: " + this.timerSetName + ", constructed at " + this.stime + ", written at " + Date().substring(0,24));
 
-		console.log ('[Timer timed: Elapsed (per call): ' + _formTimeTrim(timerTimes.ela, TIME_DP) + ' (' + _formTimeTrim(timerTimes.ela/timerTimes.calls, TIME_RATIO_DP) +
+        console.log ('[Timer timed: Elapsed (per call): ' + _formTimeTrim(timerTimes.ela, TIME_DP) + ' (' + _formTimeTrim(timerTimes.ela/timerTimes.calls, TIME_RATIO_DP) +
         '), USR (per call): ' + _formTimeTrim(timerTimes.usr, TIME_DP) + ' (' + _formTimeTrim(timerTimes.usr/timerTimes.calls, TIME_RATIO_DP) +
         '), SYS (per call): ' + _formTimeTrim(timerTimes.sys, TIME_DP) + ' (' + _formTimeTrim(timerTimes.sys/timerTimes.calls, TIME_RATIO_DP) +
         '), calls: ' + timerTimes.calls + ', "***" denotes corrected line below]', "\n");
-		timerTimes.ela /= timerTimes.calls;
-		timerTimes.usr /= timerTimes.calls;
-		timerTimes.sys /= timerTimes.calls;
+        timerTimes.ela /= timerTimes.calls;
+        timerTimes.usr /= timerTimes.calls;
+        timerTimes.sys /= timerTimes.calls;
 
         const unders = Utils.colHeaders ( [{name: 'Timer',    len: -maxName},
                                            {name: 'Elapsed',  len: TIME_WIDTH+TIME_DP},

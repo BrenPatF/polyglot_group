@@ -54,10 +54,10 @@ colHeaders: Prints a set of column headers, input as arrays of values and length
 exports.colHeaders = function (items) { // array of {name, length} objects, length < 0 -> left-justify
 
     let strings = items.map(function(j) {return j.len < 0 ? exports.lJust(j.name, -j.len) : exports.rJust(j.name, j.len)});
-	exports.write(strings.join ('  '));
+    exports.write(strings.join ('  '));
     let unders = strings.map(function(j) {return '-'.repeat(j.length)})
-	exports.write(unders.join ('  '));
-	return unders.join ('  ');
+    exports.write(unders.join ('  '));
+    return unders.join ('  ');
 };
 
 /***************************************************************************************************
@@ -66,7 +66,7 @@ maxLen: Returns maximum length of string in a list of strings
 
 ***************************************************************************************************/
 exports.maxLen = function (items) { // list of strings
-	return Array.from(items.keys()).reduce(function (a, b) { return a.length > b.length ? a : b; }).length;
+    return Array.from(items.keys()).reduce(function (a, b) { return a.length > b.length ? a : b; }).length;
 };
 
 /***************************************************************************************************
@@ -75,11 +75,11 @@ Logger: File writing helper class - not used for now
 
 ***************************************************************************************************/
 exports.Logger = class {
-	constructor (filename) {
-		this.file = fs.createWriteStream (filename);
-	};
-	write (line) { this.file.write (line + '\n'); };
-	close () { this.file.end(); };
+    constructor (filename) {
+        this.file = fs.createWriteStream (filename);
+    };
+    write (line) { this.file.write (line + '\n'); };
+    close () { this.file.end(); };
 };
 
 exports.init = function (filename) { outFile = new exports.Logger (filename); };
